@@ -1,0 +1,14 @@
+#outerWrapper { margin: 10px auto 10px auto;
+    width: 400px;
+    border: 1px solid #441B10;
+    padding: 10px;
+    background-color: #f8faef; 
+    text-align: center;}
+
+.attribute {
+    font-weight: bold;
+}
+
+.field:hover {
+background-color: lightsteelblue;
+}
