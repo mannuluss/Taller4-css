@@ -1,1 +1,166 @@
-Diego
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario Registro Foundation CSS</title>
+    <link rel="icon" type="image/png" href="favicon.jpg" />
+    <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css" integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
+
+    <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css" integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
+
+    <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css" integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<center>
+	<div class="grid-container">
+        <div class="callout secondary large">
+            <h2>Formulario de Registro de Coches</h2>
+            <br>
+    <form action="carbootstrap.html" id="form1">
+        <div id="formulario">
+        <div class="container">
+        <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-sm">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Id del auto</i></span>
+                                        <div class="col-md-8">
+                                            <input id="id_coche" name="id_coche" type="number" placeholder="ID del auto" class="form-control" min="1" max="99999999999" step="1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Combustible usado por el auto</span>
+                                        <div class="col-md-8">
+                                            <select class="input" id="id_movidoa" name="id_movidoa">
+                                                <option value="111">Gasolina</option>
+                                                <option value="112">Electrico</option>
+                                                <option value="113">Gas</option>
+                                                <option value="114">Hibrido</option>
+                                            </select><br><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Tipo de auto</span>
+                                        <div class="col-md-8">
+                                            <select class="input" id="id_tipocoche" name="id_tipocoche">
+                                            <option value="101">Mecanico</option>
+                                            <option value="102">Automático</option>
+                                        </select><br><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Estado del auto</span>
+                                        <div class="col-md-8">
+                                            <select class="input" id="id_estado" name="id_estado">
+                                            <option value="111">Nuevo</option>
+                                            <option value="222">Usado</option>
+                                        </select><br><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Marca del auto</span>
+                                        <div class="col-md-8">
+                                            <select class="input" id="id_marca" name="id_marca">
+                                            <option value="011">Mazda</option>
+                                            <option value="012">Honda</option>
+                                            <option value="013">Bmw</option>
+                                            <option value="014">Ford</option>
+                                            <option value="015">Renault</option>
+                                        </select><br><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Modelo del auto</span>
+                                        <div class="col-md-8">
+                                            <input id="modelo" name="modelo" type="text" placeholder="Modelo del auto" class="form-control" maxlength="60">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Año del auto</span>
+                                        <div class="col-md-8">
+                                            <input id="año" name="año" type="text" placeholder="Año" class="form-control" maxlength="4">
+                                        </div>
+                                    </div>
+
+                                    <div class="text">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Detalle del auto</span>
+                                        <div class="col-md-8">
+                                            <input id="detalle" name="detalle" type="text" placeholder="Detalle" class="form-control" maxlength="500">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Caja del auto</span>
+                                        <div class="col-md-8">
+                                            <input id="caja" name="caja" type="number" placeholder="Caja del auto" class="form-control" min="1" max="999" step="1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Motor del auto</span>
+                                        <div class="col-md-8">
+                                            <input id="motor" name="motor" type="number" placeholder="Motor del auto" class="form-control" min="1" max="999" step="1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Fecha Publicacion del auto</span>
+                                        <div class="col-md-8">
+                                            <input id="fechapub" name="fechapub" type="text" placeholder="Fechapub" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Precio del auto</span>
+                                        <div class="col-md-8">
+                                            <input id="precio" name="precio" type="number" placeholder="Precio" class="form-control" min="1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Moneda de pago</span>
+                                        <div class="col-md-8">
+                                            <select class="input" id="moneda" name="moneda">
+                                            <option value="dolar">DOL</option>
+                                            <option value="pesosCOL">COP</option>
+                                            <option value="euro">EUR</option>
+                                        </select><br><br>
+                                        </div>
+									
+                                    <div class="text">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Descripciones del auto</span>
+                                        <div class="col-md-8">
+                                            <input id="descripcion" name="descripcion" type="text" placeholder="Descripcion" class="form-control" maxlength="500">
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg">Guardar Cambios</button>
+                                            <button type="reset" class="btn btn-primary btn-lg">Restablecer</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        </form>
+		</center>
+    </body>
+</html>
